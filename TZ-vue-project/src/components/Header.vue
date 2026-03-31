@@ -1,27 +1,46 @@
 <script setup>
 import { RouterLink } from 'vue-router'
+import { ref } from 'vue'
+
+const dropdown = ref(false)
 </script>
 
 <template>
   <header class="header">
+
     <div class="container">
-      <RouterLink to="/" class="logo">
-        LOGO
-      </RouterLink>
 
-      <nav class="nav">
-        <RouterLink to="/" class="nav-link">Home</RouterLink>
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Service</a>
-        <a href="#" class="nav-link">Blog</a>
-        <a href="#" class="nav-link">Contact</a>
-      </nav>
-
-      <div class="actions">
-        <RouterLink to="/form" class="btn-primary">
-          Go to form
+      <div class="left__part">
+        <RouterLink to="/" class="logo">
+          <h3>LOGO</h3>
         </RouterLink>
       </div>
+
+      <div class="right__part">
+        <nav class="nav">
+          <RouterLink to="/" class="nav__link">Home</RouterLink>
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Service</a>
+          <a href="#" class="nav-link">Blog</a>
+          <a href="#" class="nav-link">Contact</a>
+        </nav>
+        <div class="actions">
+          <button @click="dropdown = !dropdown" class="btn">
+            Download
+          </button>
+
+          <div class="dropdown__menu" v-if="dropdown">
+            <a href="https://www.apple.com/app-store/" target="_blank" class="dropdown__menu__item">
+              App Store
+            </a>
+            <a href="https://play.google.com/" target="_blank" class="dropdown__menu__item">
+              Google Play
+            </a>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </header>
 </template>
@@ -30,8 +49,7 @@ import { RouterLink } from 'vue-router'
 .header {
   width: 100%;
   background-color: #fff;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
+  padding: 28px 0 23px 0;
 
   .container {
     max-width: 1200px;
@@ -40,42 +58,73 @@ import { RouterLink } from 'vue-router'
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
-  }
 
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: $dark-bg; // Використовуємо твою змінну!
-  }
+    .left__part{
 
-  .nav {
-    display: flex;
-    gap: 30px;
-
-    &-link {
-      text-decoration: none;
-      color: $text-gray; // Твоя змінна
-      font-weight: 500;
-      transition: color 0.3s;
-
-      &:hover {
+      .logo {
         color: $primary-purple;
+        font-size: 40px;
+        font-weight: 700;
+        text-decoration: none;
       }
     }
-  }
 
-  .btn-primary {
-    background-color: $primary-purple; // Твоя змінна
-    color: white;
-    padding: 12px 25px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: opacity 0.3s;
+    .right__part{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-    &:hover {
-      opacity: 0.9;
+      .nav {
+        display: flex;
+        gap: 24px;
+        margin: 0 33px 0 0;
+
+        &__link {
+          color: $dark-text;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+          text-decoration: none;
+          transition: color 0.3s;
+          cursor: pointer;
+
+          &:hover {
+            color: $primary-purple;
+          }
+        }
+      }
+
+      .actions{
+        display: flex;
+        gap: 38px;
+
+        .btn {
+          width: 174px;
+          height: 44px;
+          padding: 10px 24px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          border-radius: 100px;
+          background: $primary-purple;
+          color: var(--white, #FFF);
+          text-align: center;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0.1px;
+          border: none;
+          transition: opacity 0.3s;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+      }
     }
   }
 }

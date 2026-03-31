@@ -9,6 +9,6 @@ import Header from '@/components/Header.vue'
 <style>
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;;
 }
 </style>
