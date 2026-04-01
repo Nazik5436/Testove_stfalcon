@@ -10,8 +10,7 @@ const closeDropdown = () => {
 const lang = ref(false)
 const currentLang = ref('Eng')
 const selectLang = (tongue) => {
-  currentLang.value = tongue // Оновлюємо текст на кнопці
-  lang.value = false     // Одразу закриваємо меню
+  currentLang.value = tongue
 }
 </script>
 
