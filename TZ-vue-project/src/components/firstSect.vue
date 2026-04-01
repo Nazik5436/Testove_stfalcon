@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="first__left">
-                <img src="@/assets/img/firstIphone.png" alt="Activites">
+                <img src="@/assets/img/firstIphone.png" alt="Activites" class="first__left__img">
             </div>
         </div>
     </section>
@@ -37,8 +37,8 @@
     background-size: cover; 
     background-position: center;
     border-radius: 40px; 
-    // padding: 106px 0 106px 106px;
     margin-top: 88px;
+    
 
     .container{
         display: flex;
@@ -63,7 +63,7 @@
                     display: block;     
                     width: 46px; 
                     height: 4px; 
-                    background-color: #ff4b60;              
+                    background-color: $after-line;              
                     margin-top: 21px;
                     border-radius: 2px;
                 }
@@ -94,6 +94,10 @@
 
         .first__left{
             padding: 106px 0 0 0;
+
+            &__img{
+                filter: drop-shadow(15px 17px 18px rgba(0, 0, 0, 0.15));
+            }
         }
     }
 }
