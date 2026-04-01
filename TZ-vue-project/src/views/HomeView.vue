@@ -5,8 +5,8 @@ import secondSect from '@/components/secondSect.vue';
 
 <template>
   <main>
-    <firstSect />
-    <secondSect />
+      <firstSect />
+      <secondSect />
   </main>
 </template>
 
