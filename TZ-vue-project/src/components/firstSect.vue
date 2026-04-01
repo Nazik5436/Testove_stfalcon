@@ -5,11 +5,11 @@
                 <h1 class="first__right__title">Strong for life with us</h1>
                 <p class="first__right__par">The best Pre/postnatal fitness app! 100 exercises divided in before, during and after pregnancy. Stay strong and healthy through all stages of pregnancy.</p>
                 <div class="first__right__link">
-                    <a href="https://www.apple.com/app-store/" target="_blank">
-                    <img src="@/assets/img/AppStore.svg" alt="AppStore">
+                    <a href="https://www.apple.com/app-store/" target="_blank" class="first__right__link__item">
+                    <img src="@/assets/img/AppStore.svg" alt="AppStore" >
                     </a>
 
-                    <a href="https://play.google.com/" target="_blank">
+                    <a href="https://play.google.com/" target="_blank" class="first__right__link__item">
                     <img src="@/assets/img/GooglePlay.svg" alt="Google play">
                     </a>
                 </div>
@@ -84,6 +84,10 @@
                 justify-content: space-between;
                 max-width: 380px;
                 gap: 40px;
+
+                &__item{
+                    cursor: pointer;      
+                }
             }
 
         }
