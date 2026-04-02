@@ -3,6 +3,7 @@ import firstSect from '@/components/firstSect.vue';
 import secondSect from '@/components/secondSect.vue';
 import thirdSect from '@/components/thirdSect.vue';
 import fourthSect from '@/components/fourthSect.vue';
+import fifthSect from '@/components/fifthSect.vue'
 </script>
 
 <template>
