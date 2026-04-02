@@ -1,6 +1,7 @@
 <template>
     <section class="second">
-        <div class="container">
+        <div class="container"> 
+
             <div class="first__text">
                 <h2 class="first__text__title">How does it work?</h2>
                 <p class="first__text__par">Easy, fun & essential training for moms</p>
@@ -35,12 +36,70 @@
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    text-align: center;
     justify-content: center;
     margin-top: 160px;
 
-    .container{
-        
+    .first__text{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        &__title{
+            color: $dark-text;
+            text-align: center;
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        &__par{
+            color: $light-text;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 500;
+
+            &::after{
+                content: ''; 
+                display: block;     
+                width: 46px; 
+                height: 4px; 
+                background-color: $after-line;              
+                margin: 21px auto 0;
+                border-radius: 2px;
+            }
+        }
+    }
+
+    .first__options{
+        display: flex;
+        align-items: flex-start;
+        gap: 41px;
+        margin: 60px 0 160px 0;
+
+        &__icon{
+            border-radius: 50%;
+            box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+            padding: 16px;
+        }
+
+        &__text{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            &__title{
+                color: $dark-text;
+                font-size: 32px;
+                font-weight: 500;   
+            }
+
+            &__par{
+                max-width: 497px;
+                color: $light-text;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+            }
+        }
     }
 }
 </style>
