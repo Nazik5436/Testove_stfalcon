@@ -2,6 +2,7 @@
 import firstSect from '@/components/firstSect.vue';
 import secondSect from '@/components/secondSect.vue';
 import thirdSect from '@/components/thirdSect.vue';
+import fourthSect from '@/components/fourthSect.vue';
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import thirdSect from '@/components/thirdSect.vue';
       <firstSect />
       <secondSect />
       <thirdSect />
+      <fourthSect />
   </main>
 </template>
 

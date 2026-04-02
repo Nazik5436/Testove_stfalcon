@@ -8,14 +8,14 @@
             </div>
             <div class="first__options">
                 <div class="first__options__icon">
-                    <img src="@/assets/img/search.svg" alt="icon">
+                    <img src="@/assets/icons/search.svg" alt="icon">
                 </div>
                 <div class="first__options__text">
                     <h3 class="first__options__text__title">Browse exercises</h3>
                     <p class="first__options__text__par">Browse over 100 exercises with a video or picture and a description.</p>
                 </div>
                 <div class="first__options__icon">
-                    <img src="@/assets/img/timeline.svg" alt="icon">
+                    <img src="@/assets/icons/timeline.svg" alt="icon">
                 </div>
                 <div class="first__options__text">
                     <h3 class="first__options__text__title">Create timeline</h3>
