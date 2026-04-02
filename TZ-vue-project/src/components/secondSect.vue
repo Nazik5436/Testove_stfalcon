@@ -79,6 +79,7 @@
             border-radius: 50%;
             box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
             padding: 16px;
+            cursor: pointer;
         }
 
         &__text{
@@ -89,7 +90,8 @@
             &__title{
                 color: $dark-text;
                 font-size: 32px;
-                font-weight: 500;   
+                font-weight: 500;
+                text-align: left;   
             }
 
             &__par{
@@ -98,6 +100,7 @@
                 font-size: 18px;
                 font-weight: 400;
                 line-height: 28px;
+                text-align: left;
             }
         }
     }
