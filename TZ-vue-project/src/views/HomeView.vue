@@ -12,6 +12,7 @@ import fifthSect from '@/components/fifthSect.vue'
       <secondSect />
       <thirdSect />
       <fourthSect />
+      <fifthSect />
   </main>
 </template>
 
