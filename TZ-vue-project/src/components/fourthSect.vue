@@ -6,52 +6,52 @@
             </h2>
             <div class="fourth__grid">
 
-                <article class="card card--large">
-                    <img src="@/assets/img/firstGrid.png" alt="Running" class="card__img">
-                    <div class="card__overlay"></div>
-                    <div class="card__content">
-                        <h3 class="card__title">Return to running after pregnancy – Is your body strong enough for running?</h3>
-                        <div class="card__meta">
-                            <img src="@/assets/img/avaGrid.png" alt="Author" class="card__avatar">
+                <article class="fourth__grid__card card--large">
+                    <img src="@/assets/img/firstGrid.png" alt="Running" class="fourth__grid__card__img">
+                    <div class="fourth__grid__card__overlay"></div>
+                    <div class="fourth__grid__card__content">
+                        <h3 class="fourth__grid__card__title">Return to running after pregnancy – Is your body strong enough for running?</h3>
+                        <div class="fourth__grid__card__meta">
+                            <img src="@/assets/img/avaGrid.png" alt="Author" class="fourth__grid__card__avatar">
                             <span>BY TILDA LOFTIN</span>
                             <span>JUNE 25, 2021</span>
                         </div>
                     </div>
                 </article>
 
-                <article class="card">
-                    <img src="@/assets/img/secondGrid.png" alt="Stroller" class="card__img">
-                    <div class="card__overlay"></div>
-                    <div class="card__content">
-                        <h3 class="card__title">Stroller walks</h3>
-                        <div class="card__meta">APRIL 21, 2021</div>
+                <article class="fourth__grid__card">
+                    <img src="@/assets/img/secondGrid.png" alt="Stroller" class="fourth__grid__card__img">
+                    <div class="fourth__grid__card__overlay"></div>
+                    <div class="fourth__grid__card__content">
+                        <h3 class="fourth__grid__card__title">Stroller walks</h3>
+                        <div class="fourth__grid__card__meta">APRIL 21, 2021</div>
                     </div>
                 </article>
 
-                <article class="card">
-                    <img src="@/assets/img/thirdGrid.png" alt="Playground" class="card__img">
-                    <div class="card__overlay"></div>
-                    <div class="card__content">
-                        <h3 class="card__title">Playground workout</h3>
-                        <div class="card__meta">MARCH 17, 2020</div>
+                <article class="fourth__grid__card">
+                    <img src="@/assets/img/thirdGrid.png" alt="Playground" class="fourth__grid__card__img">
+                    <div class="fourth__grid__card__overlay"></div>
+                    <div class="fourth__grid__card__content">
+                        <h3 class="fourth__grid__card__title">Playground workout</h3>
+                        <div class="fourth__grid__card__meta">MARCH 17, 2020</div>
                     </div>
                 </article>
 
-                <article class="card">
-                    <img src="/src/assets/img/fourthGrid.png" alt="Gear" class="card__img">
-                    <div class="card__overlay"></div>
-                    <div class="card__content">
-                        <h3 class="card__title">Your Essential Fitness Gear for Each Trimester</h3>
-                        <div class="card__meta">FEBRUARY 21, 2021</div>
+                <article class="fourth__grid__card">
+                    <img src="@/assets/img/fourthGrid.png" alt="Gear" class="fourth__grid__card__img">
+                    <div class="fourth__grid__card__overlay"></div>
+                    <div class="fourth__grid__card__content">
+                        <h3 class="fourth__grid__card__title">Your Essential Fitness Gear for Each Trimester</h3>
+                        <div class="fourth__grid__card__meta">FEBRUARY 21, 2021</div>
                     </div>
                 </article>
 
-                <article class="card">
-                    <img src="/src/assets/img/fifthGrid.png" alt="Therapist" class="card__img">
-                    <div class="card__overlay"></div>
-                    <div class="card__content">
-                        <h3 class="card__title">What YOU could gain by working with a Woman's Health Physical Therapist</h3>
-                        <div class="card__meta">JANUARY 23, 2020</div>
+                <article class="fourth__grid__card">
+                    <img src="@/assets/img/fifthGrid.png" alt="Therapist" class="fourth__grid__card__img">
+                    <div class="fourth__grid__card__overlay"></div>
+                    <div class="fourth__grid__card__content">
+                        <h3 class="fourth__grid__card__title">What YOU could gain by working with a Woman's Health Physical Therapist</h3>
+                        <div class="fourth__grid__card__meta">JANUARY 23, 2020</div>
                     </div>
                 </article>
 
@@ -68,21 +68,22 @@
     </section>
 </template>
 <style scoped lang="scss">
-.container{
+
+.container {
     padding: 0 15px;
 }
 
-.fourth{
+.fourth {
     max-width: 1200px;
     margin: 0 auto;
 
-    &__title{
+    &__title {
         color: $dark-text;
         font-size: 50px;
         font-weight: 700;
         text-align: center;
 
-        &::after{
+        &::after {
             content: ''; 
             display: block;     
             width: 46px; 
@@ -93,143 +94,146 @@
         }
     }
 
-    .fourth__grid{
+    .fourth__grid {
         padding: 80px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 280px);
+        gap: 20px;
 
-        &__grid {
-            display: grid;
-            /* МАГІЯ СІТКИ: 4 однакові колонки */
-            grid-template-columns: repeat(4, 1fr);
-            /* 2 рядки, наприклад, по 280px кожен */
-            grid-template-rows: repeat(2, 280px);
-            gap: 20px; /* Відстань між картками */
-
-            /* Адаптив для планшетів (робимо 2 колонки) */
-            @media (max-width: 992px) {
+        @media (max-width: 992px) {
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: auto; /* Висота підлаштується сама */
-            }
+            grid-template-rows: auto; 
+        }
 
-            /* Адаптив для телефонів (все в одну колонку) */
-            @media (max-width: 576px) {
+        @media (max-width: 576px) {
             grid-template-columns: 1fr;
+        }
+
+        &__card {
+            position: relative;
+            border-radius: 14px; 
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; 
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 23.18%, rgba(0, 0, 0, 0.60) 100%);
+
+            &:hover .fourth__grid__card__img {
+                transform: scale(1.05);
+            }
+
+            &:first-child {
+                grid-column: 1 / 3;
+                grid-row: 1 / 3;
+
+                &__title {
+                    font-size: 32px;
+                    margin-bottom: 16px;
+                }
+
+                @media (max-width: 992px) {
+                    grid-column: 1 / -1; 
+                    grid-row: auto;
+                }
+            }
+
+            &__img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover; 
+                z-index: 1;
+                transition: transform 0.4s ease; 
+            }
+
+            &__overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 60%; 
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+                z-index: 2;
+            }
+
+            &__content {
+                position: relative;
+                z-index: 3; 
+                padding: 24px;
+                color: #ffffff;
+            }
+
+            &__title {
+                font-size: 20px; 
+                font-weight: 700;
+                line-height: 1.3;
+                margin-bottom: 12px;
+            }
+
+            &__meta {
+                display: flex;
+                align-items: center;
+                gap: 12px; 
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 500;
+                opacity: 0.9;
+            }
+
+            &__avatar {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                object-fit: cover;
             }
         }
     }
-}
 
-    .card {
-        position: relative;
-        border-radius: 16px; /* Заокруглення як на макеті */
-        overflow: hidden; /* Щоб картинка не вилазила за заокруглені кути */
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end; /* Притискаємо контент донизу */
-        min-height: 280px;
+    &__bottom__text {
+        text-align: center;
 
-    /* Ефект при наведенні (зум картинки) */
-        &:hover .card__img {
-            transform: scale(1.05);
-        }
+        &__link {
+            display: inline-flex;
+            position: relative;
+            align-items: center;
+            gap: 16px;    
+            text-decoration: none;
+            cursor: pointer; 
+            transition: color 0.3s ease;
 
-    /* --- Особливі стилі для ВЕЛИКОЇ картки --- */
-        &--large {
-            /* Кажемо їй зайняти від 1 до 3 лінії (тобто 2 колонки) і 2 рядки */
-            grid-column: 1 / 3;
-            grid-row: 1 / 3;
+                &:hover .icon {
+                    transform: translateX(6px);
+                }
 
-            /* Збільшуємо шрифти для великої картки */
-            .card__title {
-            font-size: 32px;
-            margin-bottom: 16px;
+            &:hover{
+                color: $primary-purple;
             }
 
-            /* Адаптив для планшетів: скасовуємо розтягнення, хай буде як усі */
-            @media (max-width: 992px) {
-            grid-column: 1 / -1; /* На всю ширину */
-            grid-row: auto;
+            &::after{
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: -3px;
+                transform: translateX(-50%);
+                width: 0;
+                height: 2px;
+                background-color: $primary-purple;
+                transition: width 0.3s ease;
             }
-        }
 
-    /* Картинка на фоні */
-    &__img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Заповнює весь простір, не деформуючись */
-        z-index: 1;
-        transition: transform 0.4s ease; /* Плавність зуму */
-    }
-
-    /* Темний градієнт знизу для читабельності тексту */
-    &__overlay {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 60%; /* Градієнт займає тільки нижню частину */
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
-        z-index: 2;
-    }
-
-    /* Блок з текстом */
-    &__content {
-        position: relative;
-        z-index: 3; /* Кладемо текст ПОВЕРХ градієнта */
-        padding: 24px;
-        color: #ffffff;
-    }
-
-    &__title {
-        font-size: 20px; /* Розмір для маленьких карток */
-        font-weight: 700;
-        line-height: 1.3;
-        margin-bottom: 12px;
-    }
-
-    &__meta {
-        display: flex;
-        align-items: center;
-        gap: 12px; /* Відстань між аватаркою і датою */
-        font-size: 12px;
-        text-transform: uppercase;
-        font-weight: 500;
-        opacity: 0.9;
-    }
-
-    &__avatar {
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-}
-
-.fourth__bottom__text{
-    text-align: center;
-
-    &__link{
-        display: inline-flex;
-        align-items: center;
-        gap: 16px;    
-        text-decoration: none;
-        cursor: pointer; 
-
-        &:hover{
-
-            .icon {
-            display: block;
-            transform: translateX(6px);
+            &:hover::after{
+                width: 100%;
             }
-        }
 
-        &__span{
-            color: $dark-text;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 160%;
+            &__span {
+                color: $dark-text;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 160%;
+            }
         }
     }
 }
@@ -237,7 +241,5 @@
 .icon {
     transition: transform 0.3s ease;
 }
-
-
 
 </style>
