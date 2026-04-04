@@ -9,37 +9,37 @@
 
 <template>
     <footer class="footer"> 
-        <div class="footer__container"> 
+        <div class="container"> 
         
-            <div class="footer__inner">
+            <div class="footer__block">
                 
                 <div class="footer__logo">
-                    <a class="footer__logo-link" href="#" @click.prevent="scrollToTop">
+                    <a class="footer__block__logo__link" href="#" @click.prevent="scrollToTop">
                         LOGO
                     </a>
                 </div>
 
-                <nav class="footer__nav">
-                    <ul class="footer__list">
-                        <li><RouterLink to="/about" class="footer__link">About Us</RouterLink></li>
-                        <li><RouterLink to="/blog" class="footer__link">Blog</RouterLink></li>
-                        <li><RouterLink to="/support" class="footer__link">Support</RouterLink></li>
+                <div class="footer__block__div">
+                    <ul class="footer__block__div__list">
+                        <li><RouterLink to="/about" class="footer__block__div__list__link">About Us</RouterLink></li>
+                        <li><RouterLink to="/blog" class="footer__block__div__list__link">Blog</RouterLink></li>
+                        <li><RouterLink to="/support" class="footer__block__div__list__link">Support</RouterLink></li>
                     </ul>
-                </nav>
+                </div>
 
-                <nav class="footer__nav">
-                    <ul class="footer__list">
-                        <li><a href="#" class="footer__link">Terms & Conditions</a></li>
-                        <li><a href="#" class="footer__link">Privacy Policy</a></li>
-                        <li><a href="#" class="footer__link">Cookies</a></li>
+                <div class="footer__block__div">
+                    <ul class="footer__block__div__list">
+                        <li><a href="#" class="footer__block__div__list__link">Terms & Conditions</a></li>
+                        <li><a href="#" class="footer__block__div__list__link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer__block__div__list__link">Cookies</a></li>
                     </ul>
-                </nav>
+                </div>
 
-                <div class="footer__socials">
-                    <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="footer__social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="#" class="footer__social-link" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                <div class="footer__block__socials">
+                    <a href="#" class="footer__block__socials__link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="footer__block__socials__link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer__block__socials__link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="footer__block__socials__link" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
                 </div>
 
             </div>
@@ -57,68 +57,98 @@
     background-color: #3e3a47; 
     width: 100%;
     padding: 74px 78px; 
-    color: #ffffff;
+    color: $white;
     margin-top: 100px;
+
+    .footer__block {
+        display: flex;
+        align-items: flex-start; 
+        flex-wrap: wrap; 
+        gap: 36px; 
+        max-width: 1150px;
+        margin: 0 auto; 
+
+        &__logo__link {
+            color: $white;
+            font-size: 40px;
+            font-weight: 700;
+            text-decoration: none;
+            margin-right: 56px;
+        }
+
+        &__div{
+            width: 286px;
+
+            &__list{
+                display: flex;
+                flex-direction: column; 
+                list-style: none; 
+
+                &__link{
+                    position: relative;
+                    color: $white; 
+                    font-size: 24px;    
+                    font-weight: 400;
+                    line-height: 50px;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: $white;
+                    }
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        bottom: -5px;
+                        transform: translateX(-50%);
+                        width: 0;
+                        height: 2px;
+                        background-color: $white;
+                        transition: width 0.3s ease;
+                    }
+
+                    &:hover::after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &__socials{
+            display: flex;
+            gap: 20px;
+
+            &__link{
+                color: $white;
+                font-size: 24px; 
+            }
+
+        }
+    }
 }
 
-.footer__container {
-    max-width: 1200px;
-    margin: 0 auto;
-    // padding: 0 15px;
-}
-
-.footer__inner {
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start; 
-    flex-wrap: wrap; 
-    gap: 36px; 
-}
 
 
-.footer__logo-link {
-    font-size: 28px;
-    font-weight: 800;
-    color: #ffffff;
-    text-decoration: none;
-    letter-spacing: 1px;
-}
 
 
-.footer__list {
-    list-style: none; 
-    display: flex;
-    flex-direction: column; 
-    gap: 16px; 
+
+
+.footer__list { 
 }
 
 .footer__link {
-    color: #e0e0e0; 
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
-
-    &:hover {
-        color: #ffffff; 
-        text-decoration: underline;
-    }
+    
 }
 
 
 .footer__socials {
-    display: flex;
-    gap: 20px; 
+     
 }
 
 .footer__social-link {
-    color: #ffffff;
-    font-size: 24px; 
-    transition: transform 0.3s ease, color 0.3s ease;
-
-    &:hover {
-        transform: translateY(-4px); 
-        color: #ff4b60; 
-    }
+    
 }
 
 

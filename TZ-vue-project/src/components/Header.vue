@@ -120,17 +120,35 @@ const selectLang = (tongue) => {
         margin: 0 33px 0 0;
 
         &__link {
+          position: relative;
+          text-decoration: none;
           color: $dark-text;
           font-size: 18px;
           font-style: normal;
           font-weight: 400;
           line-height: 28px;
           text-decoration: none;
-          transition: color 0.3s;
+          transition: color 0.3s ease;
           cursor: pointer;
 
           &:hover {
             color: $primary-purple;
+          }
+
+          &::after{
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -1px;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: $primary-purple;
+            transition: width 0.3s ease;
+          }
+
+          &:hover::after{
+            width: 100%;
           }
         }
       }
