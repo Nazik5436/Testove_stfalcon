@@ -8,7 +8,7 @@
 </script>
 
 <template>
-    <footer class="footer"> 
+    <footer class="footer" id="contacts"> 
         <div class="container"> 
         
             <div class="footer__block">

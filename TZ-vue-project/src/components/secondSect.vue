@@ -1,5 +1,5 @@
 <template>
-    <section class="second">
+    <section class="second" id="service">
         <div class="container"> 
 
             <div class="first__text">

@@ -1,5 +1,5 @@
 <template>
-    <section class="first">
+    <section class="first" id="about">
         <div class="container">
             <div class="first__right">
                 <h1 class="first__right__title">Strong for life with us</h1>

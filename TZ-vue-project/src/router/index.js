@@ -12,12 +12,26 @@ const router = createRouter({
     {
       path: '/forms',
       name: 'forms',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/FormsView.vue'),
     },
-  ],
+  ], 
+  
+
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+      }
+    }
+
+    if (savedPosition) {
+      return savedPosition
+    } 
+    
+    return { top: 0 }
+  }
+
 })
 
 export default router

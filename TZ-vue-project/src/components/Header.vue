@@ -1,6 +1,9 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t, locale } = useI18n()
 
 const dropdown = ref(false)
 const closeDropdown = () => {
@@ -9,8 +12,11 @@ const closeDropdown = () => {
 
 const lang = ref(false)
 const currentLang = ref('Eng')
-const selectLang = (tongue) => {
-  currentLang.value = tongue
+
+const selectLang = (tongueName, langCode) => {
+  currentLang.value = tongueName
+  lang.value = false
+  locale.value = langCode 
 }
 </script>
 
@@ -27,11 +33,11 @@ const selectLang = (tongue) => {
 
       <div class="right__part">
         <nav class="nav">
-          <RouterLink to="/" class="nav__link">Home</RouterLink>
-          <a href="#" class="nav__link">About</a>
-          <a href="#" class="nav__link">Service</a>
-          <a href="#" class="nav__link">Blog</a>
-          <a href="#" class="nav__link">Contact</a>
+          <RouterLink to="/" class="nav__link">{{ $t('nav.home') }}</RouterLink>
+          <RouterLink :to="{ name: 'home', hash: '#about' }" class="nav__link">{{ $t('nav.about') }}</RouterLink>
+          <RouterLink :to="{ name: 'home', hash: '#service' }" class="nav__link">{{ $t('nav.service') }}</RouterLink>
+          <RouterLink :to="{ name: 'home', hash: '#blog' }" class="nav__link">{{ $t('nav.blog') }}</RouterLink>
+          <RouterLink :to="{ name: 'home', hash: '#contacts' }" class="nav__link">{{ $t('nav.contact') }}</RouterLink>
         </nav>
         <div class="actions">
 
@@ -61,14 +67,14 @@ const selectLang = (tongue) => {
 
             <div class="lang__dropdown" v-if="lang">
       
-              <div class="lang__dropdown__item" @click="selectLang('Sve')">
+              <div class="lang__dropdown__item" @click="selectLang('Sve', 'sv')">
                 <span class="lang__dropdown__item__flag">
                   <img src="/src/assets/icons/sweden.svg" alt="SVE">
                 </span>
                 <span class="lang__dropdown__item__name">Sverige</span>
               </div>
 
-              <div class="lang__dropdown__item" @click="selectLang('Eng')">
+              <div class="lang__dropdown__item" @click="selectLang('Eng', 'en')">
                 <span class="lang__dropdown__item__flag">
                   <img src="/src/assets/icons/UK.svg" alt="UK">
                 </span>

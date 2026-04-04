@@ -176,26 +176,23 @@
         gap: 90px;
 
         .third__second__block__right{
-            position: relative; /* Робимо колонку якорем */
+            position: relative;
             width: 546px; 
             height: 546px;
             display: flex;
-            justify-content: center; /* Відцентровуємо телефон */
+            justify-content: center;
             align-items: center;  
 
             &__BG{
                 position: absolute;
-                /* Розтягуємо фон */
                 top: 0;
                 bottom: 0;
                 left: 0;
-                right: 0;
-                
+                right: 0; 
                 background-image: url('/src/assets/img/thirdBG.svg');
-                background-size: cover; /* Або 100% 100%, залежить від SVG */
+                background-size: cover;
                 background-position: center;
                 border-radius: 40px;
-                
                 z-index: 1;
             }
 

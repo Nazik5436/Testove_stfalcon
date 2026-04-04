@@ -1,5 +1,5 @@
 <template>
-    <section class="fourth">
+    <section class="fourth" id="blog">
         <div class="container">
             <h2 class="fourth__title">
                 Our blog posts
