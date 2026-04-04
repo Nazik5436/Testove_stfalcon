@@ -58,7 +58,7 @@
     width: 100%;
     padding: 74px 78px; 
     color: #ffffff;
-    margin-top: 160px;
+    margin-top: 100px;
 }
 
 .footer__container {

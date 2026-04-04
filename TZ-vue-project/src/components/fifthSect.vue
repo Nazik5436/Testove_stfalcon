@@ -30,9 +30,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // flex-wrap: wrap; 
         gap: 30px;
-        margin-top: 81px;
+        margin: 81px 0 60px 0;
 
         &__title{
             color: $white;
