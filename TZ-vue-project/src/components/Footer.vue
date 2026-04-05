@@ -21,9 +21,9 @@
 
                 <div class="footer__block__div">
                     <ul class="footer__block__div__list">
-                        <li><RouterLink to="/about" class="footer__block__div__list__link">{{ $t('footer.about') }}</RouterLink></li>
-                        <li><RouterLink to="/blog" class="footer__block__div__list__link">{{ $t('footer.blog') }}</RouterLink></li>
-                        <li><RouterLink to="/support" class="footer__block__div__list__link">{{ $t('footer.support') }}</RouterLink></li>
+                        <li><a href="#" class="footer__block__div__list__link">{{ $t('footer.about') }}</a></li>
+                        <li><a href="#" class="footer__block__div__list__link">{{ $t('footer.blog') }}</a></li>
+                        <li><a href="#" class="footer__block__div__list__link">{{ $t('footer.support') }}</a></li>
                     </ul>
                 </div>
 
