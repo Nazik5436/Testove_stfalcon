@@ -2,7 +2,9 @@
 
 A modern, responsive landing page and web application built to help mothers stay strong and healthy before, during, and after pregnancy. 
 
-## 🛠 Tech Stack
+<img width="1382" height="882" alt="image" src="https://github.com/user-attachments/assets/9e66bbf8-e6c9-436e-9d25-6574970ec22a" />
+
+🛠 Tech Stack
 
 * **Framework:** Vue 3
 * **Build Tool:** Vite
