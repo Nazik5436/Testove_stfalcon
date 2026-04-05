@@ -6,7 +6,7 @@
             </h2>
             <div class="fourth__grid">
 
-                <article class="fourth__grid__card card--large">
+                <article class="fourth__grid__card">
                     <img src="@/assets/img/firstGrid.png" alt="Running" class="fourth__grid__card__img">
                     <div class="fourth__grid__card__overlay"></div>
                     <div class="fourth__grid__card__content">
@@ -99,7 +99,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 280px);
-        gap: 20px;
+        gap: 32px;
 
         &__card {
             position: relative;
@@ -108,6 +108,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end; 
+            box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 23.18%, rgba(0, 0, 0, 0.60) 100%);
 
             &:hover .fourth__grid__card__img {
