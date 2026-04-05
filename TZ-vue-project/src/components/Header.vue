@@ -18,12 +18,6 @@ const selectLang = (tongueName, langCode) => {
   lang.value = false
   locale.value = langCode 
 }
-
-const isBurgerOpen = ref(false)
-
-const closeBurger = () => {
-  isBurgerOpen.value = false
-}
 </script>
 
 <template>

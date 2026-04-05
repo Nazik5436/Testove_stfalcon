@@ -128,19 +128,4 @@
         }
     }
 }
-
-
-
-// @media (max-width: 768px) {
-//   .footer__inner {
-//     flex-direction: column; 
-//     align-items: center; 
-//     text-align: center;
-//     gap: 32px;
-//   }
-
-//   .footer__list {
-//     align-items: center;
-//   }
-// }
 </style>

@@ -101,15 +101,6 @@
         grid-template-rows: repeat(2, 280px);
         gap: 20px;
 
-        @media (max-width: 992px) {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: auto; 
-        }
-
-        @media (max-width: 576px) {
-            grid-template-columns: 1fr;
-        }
-
         &__card {
             position: relative;
             border-radius: 14px; 
@@ -130,11 +121,6 @@
                 &__title {
                     font-size: 32px;
                     margin-bottom: 16px;
-                }
-
-                @media (max-width: 992px) {
-                    grid-column: 1 / -1; 
-                    grid-row: auto;
                 }
             }
 
