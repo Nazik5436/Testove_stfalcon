@@ -1,38 +1,26 @@
-# TZ-vue-project
+# 🤰 Pre/Postnatal Fitness App
 
-This template should help get you started developing with Vue 3 in Vite.
+A modern, responsive landing page and web application built to help mothers stay strong and healthy before, during, and after pregnancy. 
 
-## Recommended IDE Setup
+## ✨ Features
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+* **Multilingual (i18n):** Full support for English and Swedish languages with instant switching.
+* **Responsive Design:** Seamless experience across desktop, tablet, and mobile devices (includes a custom mobile burger menu).
+* **Modern Routing:** Smooth navigation between sections and pages using Vue Router.
+* **Clean UI/UX:** Built with SCSS, utilizing Flexbox/Grid for perfect alignment and custom styling.
 
-## Recommended Browser Setup
+## 🛠 Tech Stack
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+* **Framework:** Vue 3 (Composition API)
+* **Build Tool:** Vite
+* **Routing:** Vue Router 4
+* **Internationalization:** Vue I18n 9
+* **Styling:** SCSS / CSS3
 
-## Customize configuration
+## 🚀 Project Setup
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+If you want to run this project locally, follow these steps:
 
-## Project Setup
-
-```sh
+### 1. Install dependencies
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
