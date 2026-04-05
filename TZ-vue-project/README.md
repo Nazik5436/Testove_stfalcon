@@ -10,14 +10,12 @@ A modern, responsive landing page and web application built to help mothers stay
 * **Internationalization:** Vue I18n 9
 * **Styling:** SCSS / CSS3
 
-## 🚀 Project Setup
+## 🚀 How to run this project (Project Setup)
 
-If you want to run this project locally, follow these steps:
+To get this project up and running on your local machine, just follow these simple steps:
 
 ### 1. Install dependencies
+First, download all the necessary packages for the project to work:
 ```bash
 npm install
 
-### 2. Install dependencies
-```bash
-npm run dev 
