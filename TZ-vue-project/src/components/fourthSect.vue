@@ -2,7 +2,7 @@
     <section class="fourth" id="blog">
         <div class="container">
             <h2 class="fourth__title">
-                Our blog posts
+                {{ $t('blog.mainTitle') }}
             </h2>
             <div class="fourth__grid">
 
@@ -10,11 +10,11 @@
                     <img src="@/assets/img/firstGrid.png" alt="Running" class="fourth__grid__card__img">
                     <div class="fourth__grid__card__overlay"></div>
                     <div class="fourth__grid__card__content">
-                        <h3 class="fourth__grid__card__title">Return to running after pregnancy – Is your body strong enough for running?</h3>
+                        <h3 class="fourth__grid__card__title">{{ $t('blog.post1.title') }}</h3>
                         <div class="fourth__grid__card__meta">
                             <img src="@/assets/img/avaGrid.png" alt="Author" class="fourth__grid__card__avatar">
-                            <span>BY TILDA LOFTIN</span>
-                            <span>JUNE 25, 2021</span>
+                            <span>{{ $t('blog.post1.author') }}</span>
+                            <span>{{ $t('blog.post1.date') }}</span>
                         </div>
                     </div>
                 </article>
@@ -23,8 +23,8 @@
                     <img src="@/assets/img/secondGrid.png" alt="Stroller" class="fourth__grid__card__img">
                     <div class="fourth__grid__card__overlay"></div>
                     <div class="fourth__grid__card__content">
-                        <h3 class="fourth__grid__card__title">Stroller walks</h3>
-                        <div class="fourth__grid__card__meta">APRIL 21, 2021</div>
+                        <h3 class="fourth__grid__card__title">{{ $t('blog.post2.title') }}</h3>
+                        <div class="fourth__grid__card__meta">{{ $t('blog.post2.date') }}</div>
                     </div>
                 </article>
 
@@ -32,8 +32,8 @@
                     <img src="@/assets/img/thirdGrid.png" alt="Playground" class="fourth__grid__card__img">
                     <div class="fourth__grid__card__overlay"></div>
                     <div class="fourth__grid__card__content">
-                        <h3 class="fourth__grid__card__title">Playground workout</h3>
-                        <div class="fourth__grid__card__meta">MARCH 17, 2020</div>
+                        <h3 class="fourth__grid__card__title">{{ $t('blog.post3.title') }}</h3>
+                        <div class="fourth__grid__card__meta">{{ $t('blog.post3.date') }}</div>
                     </div>
                 </article>
 
@@ -41,8 +41,8 @@
                     <img src="@/assets/img/fourthGrid.png" alt="Gear" class="fourth__grid__card__img">
                     <div class="fourth__grid__card__overlay"></div>
                     <div class="fourth__grid__card__content">
-                        <h3 class="fourth__grid__card__title">Your Essential Fitness Gear for Each Trimester</h3>
-                        <div class="fourth__grid__card__meta">FEBRUARY 21, 2021</div>
+                        <h3 class="fourth__grid__card__title">{{ $t('blog.post4.title') }}</h3>
+                        <div class="fourth__grid__card__meta">{{ $t('blog.post4.date') }}</div>
                     </div>
                 </article>
 
@@ -50,8 +50,8 @@
                     <img src="@/assets/img/fifthGrid.png" alt="Therapist" class="fourth__grid__card__img">
                     <div class="fourth__grid__card__overlay"></div>
                     <div class="fourth__grid__card__content">
-                        <h3 class="fourth__grid__card__title">What YOU could gain by working with a Woman's Health Physical Therapist</h3>
-                        <div class="fourth__grid__card__meta">JANUARY 23, 2020</div>
+                        <h3 class="fourth__grid__card__title">{{ $t('blog.post5.title') }}</h3>
+                        <div class="fourth__grid__card__meta">{{ $t('blog.post5.date') }}</div>
                     </div>
                 </article>
 
@@ -59,7 +59,7 @@
             
             <div class="fourth__bottom__text">
                 <a href="#" class="fourth__bottom__text__link">
-                    <span class="fourth__bottom__text__link__span">Like what you see? View more</span>
+                    <span class="fourth__bottom__text__link__span">{{ $t('blog.callToAct') }}</span>
                     <img src="@/assets/icons/callToAct.svg" alt="icon" class="icon">
                 </a>
             </div>

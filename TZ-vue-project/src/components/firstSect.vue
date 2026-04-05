@@ -2,8 +2,8 @@
     <section class="first" id="about">
         <div class="container">
             <div class="first__right">
-                <h1 class="first__right__title">Strong for life with us</h1>
-                <p class="first__right__par">The best Pre/postnatal fitness app! 100 exercises divided in before, during and after pregnancy. Stay strong and healthy through all stages of pregnancy.</p>
+                <h1 class="first__right__title">{{ $t('firstSect.title') }}</h1>
+                <p class="first__right__par">{{ $t('firstSect.description') }}</p>
                 <div class="first__right__link">
                     <a href="https://www.apple.com/app-store/" target="_blank" class="first__right__link__item">
                     <img src="@/assets/img/AppStore.svg" alt="AppStore" >

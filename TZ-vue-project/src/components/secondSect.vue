@@ -3,23 +3,23 @@
         <div class="container"> 
 
             <div class="first__text">
-                <h2 class="first__text__title">How does it work?</h2>
-                <p class="first__text__par">Easy, fun & essential training for moms</p>
+                <h2 class="first__text__title">{{ $t('secondSect.title') }}</h2>
+                <p class="first__text__par">{{ $t('secondSect.subtitle') }}</p>            
             </div>
             <div class="first__options">
                 <div class="first__options__icon">
                     <img src="@/assets/icons/search.svg" alt="icon">
                 </div>
                 <div class="first__options__text">
-                    <h3 class="first__options__text__title">Browse exercises</h3>
-                    <p class="first__options__text__par">Browse over 100 exercises with a video or picture and a description.</p>
+                    <h3 class="first__options__text__title">{{ $t('secondSect.browseTitle') }}</h3>
+                    <p class="first__options__text__par">{{ $t('secondSect.browseDesc') }}</p>                
                 </div>
                 <div class="first__options__icon">
                     <img src="@/assets/icons/timeline.svg" alt="icon">
                 </div>
                 <div class="first__options__text">
-                    <h3 class="first__options__text__title">Create timeline</h3>
-                    <p class="first__options__text__par">Take pictures along the way during and after the pregnancy to see the transformation.</p>
+                    <h3 class="first__options__text__title">{{ $t('secondSect.timelineTitle') }}</h3>
+                    <p class="first__options__text__par">{{ $t('secondSect.timelineDesc') }}</p>                
                 </div>
             </div>
             

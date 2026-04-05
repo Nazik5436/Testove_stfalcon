@@ -25,39 +25,39 @@ const handleSubmit = () => {
     <section class="forms__section">
         <div class="container">
             <div class="forms__bocks">
-                <h2 class="forms__title">Send your data</h2>
+                <h2 class="forms__title">{{ $t('form.title') }}</h2>
                 
                 <form @submit.prevent="handleSubmit" class="forms__bocks__osnova">
                 <input 
                     type="text" 
                     v-model="forms.firstName" 
-                    placeholder="First Name" 
+                    :placeholder="$t('form.firstName')" 
                     class="forms__bocks__osnova__input" 
                     required 
                 />
                 <input 
                     type="text" 
                     v-model="forms.secondName" 
-                    placeholder="Second Name" 
+                    :placeholder="$t('form.secondName')" 
                     class="forms__bocks__osnova__input" 
                     required 
                 />
                 <input 
                     type="email" 
                     v-model="forms.email" 
-                    placeholder="Email" 
+                    :placeholder="$t('form.email')" 
                     class="forms__bocks__osnova__input" 
                     required 
                 />
                 <input 
                     type="text" 
                     v-model="forms.address" 
-                    placeholder="Address" 
+                    :placeholder="$t('form.address')" 
                     class="forms__bocks__osnova__input" 
                     required 
                 />
                 
-                <button type="submit" class="forms__bocks__osnova__btn">Submit</button>
+                <button type="submit" class="forms__bocks__osnova__btn">{{ $t('form.submit') }}</button>
                 </form>
 
             </div>

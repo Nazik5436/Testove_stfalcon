@@ -3,17 +3,17 @@
         <div class="container">
 
             <div class="third__text">
-                <h2 class="third__text__title">Before, during and after pregnancy</h2>
-                <p class="third__text__par">The app is divided into three different stages to help you choose appropriate exercises. Each exercise is carefully selected to ensure safe and appropriate adjustments to follow the pregnancy’s progress.</p>
+                <h2 class="third__text__title">{{ $t('thirdSect.title') }}</h2>
+                <p class="third__text__par">{{ $t('thirdSect.description') }}</p>            
             </div>
 
             <div class="third__first__block">
 
                 <div class="third__first__block__right">
-                    <h3 class="third__first__block__right__title">Before pregnancy</h3>
-                    <p class="third__first__block__right__par">Start preparing for pregnancy with safe exercises that build up a strong body.</p>
-                    <p class="third__first__block__right__par">Trimesters</p>
-                    <p class="third__first__block__right__par">The pregnancy is divided into first trimester, second trimester part 1 and 2, and third trimester part 1 and 2 to provide exercises that are safe for each stage of the pregnancy. Each exercise comes with a video and a description so you can safely perform each exercise. Simple put in your due date and you will be taken to the proper stage.</p>
+                    <h3 class="third__first__block__right__title">{{ $t('thirdSectRight.title') }}</h3>
+                    <p class="third__first__block__right__par">{{ $t('thirdSectRight.desc1') }}</p>
+                    <h4 class="third__first__block__right__par">{{ $t('thirdSectRight.subtitle') }}</h4>
+                    <p class="third__first__block__right__par">{{ $t('thirdSectRight.desc2') }}.</p>
                 </div>
 
                 <div class="third__first__block__left">
@@ -31,8 +31,8 @@
                 </div>
 
                 <div class="third__second__block__left">
-                    <h3 class="third__second__block__left__title">During pregnancy</h3>
-                    <p class="third__second__block__left__par">Working out during pregnancy has many benefits for both the mom and the baby. It can reduce back pain, help prevent gestational diabetes, promote good posture, strength and endurance, and also improve the ability to cope with labor.</p>
+                    <h3 class="third__second__block__left__title">{{ $t('thirdSectLeft.title') }}</h3>
+                    <p class="third__second__block__left__par">{{ $t('thirdSectLeft.description') }}</p>
                 </div>
 
             </div>

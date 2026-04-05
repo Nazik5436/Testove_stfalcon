@@ -2,9 +2,9 @@
     <section class="fifth">
         <div class="container">
             <div class="fifth__BG">
-                <h2 class="fifth__BG__title">Send your data</h2>
+                <h2 class="fifth__BG__title">{{ $t('fifthSect.title') }}</h2>
                 <RouterLink :to="{ name: 'forms' }" class="fifth__BG__btn">
-                    Go to form
+                    {{ $t('fifthSect.button') }}
                 </RouterLink>
             </div>
         </div>

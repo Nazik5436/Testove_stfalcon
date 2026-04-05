@@ -43,15 +43,15 @@ const selectLang = (tongueName, langCode) => {
 
           <div class="left__act">
             <button @click="dropdown = !dropdown" class="left__act__btn">
-              Download
+              {{ $t('buttons.download') }}
             </button>
 
             <div class="left__act__dropdown" v-if="dropdown">
               <a href="https://www.apple.com/app-store/" target="_blank" class="left__act__dropdown__item" @click="closeDropdown">
-                App Store
+                {{ $t('apps.appStore') }}
               </a>
               <a href="https://play.google.com/" target="_blank" class="left__act__dropdown__item" @click="closeDropdown">
-                Google Play
+                {{ $t('apps.googlePlay') }}
               </a>
             </div>
           </div>

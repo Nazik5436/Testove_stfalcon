@@ -21,17 +21,17 @@
 
                 <div class="footer__block__div">
                     <ul class="footer__block__div__list">
-                        <li><RouterLink to="/about" class="footer__block__div__list__link">About Us</RouterLink></li>
-                        <li><RouterLink to="/blog" class="footer__block__div__list__link">Blog</RouterLink></li>
-                        <li><RouterLink to="/support" class="footer__block__div__list__link">Support</RouterLink></li>
+                        <li><RouterLink to="/about" class="footer__block__div__list__link">{{ $t('footer.about') }}</RouterLink></li>
+                        <li><RouterLink to="/blog" class="footer__block__div__list__link">{{ $t('footer.blog') }}</RouterLink></li>
+                        <li><RouterLink to="/support" class="footer__block__div__list__link">{{ $t('footer.support') }}</RouterLink></li>
                     </ul>
                 </div>
 
                 <div class="footer__block__div">
                     <ul class="footer__block__div__list">
-                        <li><a href="#" class="footer__block__div__list__link">Terms & Conditions</a></li>
-                        <li><a href="#" class="footer__block__div__list__link">Privacy Policy</a></li>
-                        <li><a href="#" class="footer__block__div__list__link">Cookies</a></li>
+                        <li><a href="#" class="footer__block__div__list__link">{{ $t('footer.terms') }}</a></li>
+                        <li><a href="#" class="footer__block__div__list__link">{{ $t('footer.privacy') }}</a></li>
+                        <li><a href="#" class="footer__block__div__list__link">{{ $t('footer.cookies') }}</a></li>
                     </ul>
                 </div>
 
@@ -129,27 +129,6 @@
     }
 }
 
-
-
-
-
-
-
-.footer__list { 
-}
-
-.footer__link {
-    
-}
-
-
-.footer__socials {
-     
-}
-
-.footer__social-link {
-    
-}
 
 
 // @media (max-width: 768px) {
